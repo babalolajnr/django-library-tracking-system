@@ -1,0 +1,55 @@
+
+### Get all authors
+GET http://localhost:8000/api/authors/
+Accept: application/json
+
+### Get all books
+GET http://localhost:8000/api/books/
+Accept: application/json
+
+### Get all members
+GET http://localhost:8000/api/members/
+Accept: application/json
+
+### Get all loans
+GET http://localhost:8000/api/loans/
+Accept: application/json
+
+### Create a new author
+POST http://localhost:8000/api/authors/
+Content-Type: application/json
+
+{
+  "first_name": "Chinua",
+  "last_name": "Achebe"
+}
+
+### Create a new book
+POST http://localhost:8000/api/books/
+Content-Type: application/json
+
+{
+  "title": "Things Fall Apart",
+  "author_id": 1,
+  "isbn": "978-0-06-061",
+  "genre": "fiction",
+  "available_copies": 5
+}
+
+### Create a new member
+POST http://localhost:8000/api/members/
+Content-Type: application/json
+
+{
+  "name": "Amina Yusuf"
+}
+
+### Create a new loan
+POST http://localhost:8000/api/loans/
+Content-Type: application/json
+
+{
+  "book_id": 1,
+  "member_id": 1,
+  "return_date": "2025-06-30"
+}

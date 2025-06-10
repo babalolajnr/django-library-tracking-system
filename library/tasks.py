@@ -7,7 +7,7 @@ from django.conf import settings
 @shared_task
 def send_loan_notification(loan_id):
     try:
-        loan = Loan.objects.get(id=loan_id)  # pyright: ignore
+        loan = Loan.objects.get(id=loan_id)
         member_email = loan.member.user.email
         book_title = loan.book.title
         send_mail(

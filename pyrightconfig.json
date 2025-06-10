@@ -1,4 +1,13 @@
 {
   "venvPath": ".",
-  "venv": ".venv"
+  "venv": ".venv",
+  "typeCheckingMode": "basic", // or "strict"
+  "include": ["."],
+  "reportMissingTypeStubs": false,
+  "reportUnknownMemberType": false,
+  "reportUnknownVariableType": false,
+  "reportUnknownArgumentType": false,
+  "reportPrivateImportUsage": false,
+  "reportImportCycles": false,
+  "pythonVersion": "3.11"
 }
